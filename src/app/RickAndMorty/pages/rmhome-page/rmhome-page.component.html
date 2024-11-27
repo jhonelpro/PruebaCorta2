@@ -1,0 +1,21 @@
+<body>
+    <nav></nav>
+
+    <div class="container">
+        <div class="inline-flex rounded-md shadow-sm" role="group" style="padding: 5%;">
+            <div>
+                <app-previous-button (previousButtonClicked)="onPreviousButtonClick()"></app-previous-button>
+                <app-next-button (nextButtonClicked)="onNextButtonClick()"></app-next-button>                
+            </div>
+            <app-input-field (inputSubmitted)="onSearchButtonClick($event)"></app-input-field>
+        </div>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center;">
+        @for (item of datos; track $index) {
+            <app-pcard [characterInfo]="item"></app-pcard>
+        }
+    </div>
+
+    <footer></footer>
+</body>
