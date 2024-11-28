@@ -15,7 +15,7 @@ export class InputFieldComponent {
   @Output() inputSubmitted = new EventEmitter<string>();
   
   sendInput(){
-    this.inputSubmitted.emit(this.inputTextChange);
+    this.inputSubmitted.emit(this.inputTextChange.trim());
     this.inputTextChange = '';
   }
 }

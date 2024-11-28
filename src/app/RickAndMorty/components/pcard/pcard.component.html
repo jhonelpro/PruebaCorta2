@@ -1,11 +1,22 @@
-<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <img class="rounded-t-lg" src={{characterInfo.image}} alt="" />
-    <div class="p-5">
+<div class="grid-container">
+    <div class="card">
+      <img class="object-cover" src={{characterInfo.image}} alt="Character Image" />
+      <div class="card-content">
         <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><strong>Name: </strong>{{characterInfo.name}}</h5>
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <strong>Name: </strong>{{characterInfo.name}}
+          </h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><strong>Status: </strong>{{characterInfo.status}}</p>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><strong>Specie: </strong>{{characterInfo.specie}}</p>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><strong>Locatiin: </strong>{{characterInfo.location}}</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <strong>Status: </strong>{{characterInfo.status}}
+        </p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <strong>Specie: </strong>{{characterInfo.specie}}
+        </p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <strong>Location: </strong>{{characterInfo.location}}
+        </p>
+      </div>
     </div>
-</div>
+  </div>
+  
